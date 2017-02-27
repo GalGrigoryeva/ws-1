@@ -1,0 +1,25 @@
+.many-books {
+  height: 370px;
+  padding: 97px 0;
+  box-sizing: border-box;
+  background-color: #574f52;
+  background-image: url("../img/bg-footer@1x.jpg");
+  background-size: cover;
+
+  @media #{$retina} {
+    background-image: url("../img/bg-footer@2x.jpg");
+    background-size: 1800px auto;
+  }
+}
+ .many-books__wrapper {
+   @include container();
+ }
+
+.many-books__title {
+  @include small-title();
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: center;
+}

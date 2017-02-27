@@ -1,0 +1,25 @@
+.open-book {
+  height: 370px;
+  padding: 97px 0;
+  box-sizing: border-box;
+  background-color: #574f52;
+  background-image: url("../img/bg-advantage@1x.jpg");
+  background-size: cover;
+
+  @media #{$retina} {
+    background-image: url("../img/bg-advantage@2x.jpg");
+    background-size: 1800px auto;
+  }
+}
+ .open-book__wrapper {
+   @include container();
+ }
+
+.open-book__title {
+  @include small-title();
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: center;
+}

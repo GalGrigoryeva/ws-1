@@ -1,0 +1,30 @@
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container() {
+  width: 960px;
+  margin: 0 auto;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+
+@mixin big-title() {
+  font-size: 50px;
+  line-height: 55px;
+}
+
+@mixin small-title() {
+  font-size: 30px;
+  line-height: 45px;
+}

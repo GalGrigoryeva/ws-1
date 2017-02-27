@@ -1,0 +1,46 @@
+.partnership {
+  height: 365px;
+  padding: 100px 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+ .partnership__wrapper {
+   @include container();
+ }
+
+.partnership__title {
+  @include small-title();
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+  color: $font-blue;
+  text-align: center;
+}
+
+.partnership__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partnership__item {
+  position: relative;
+  width: 240px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: "";
+    width: 8px;
+    height: 8px;    
+    border-radius: 50%;
+    background-color: $green;
+  }
+}

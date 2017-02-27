@@ -1,0 +1,34 @@
+{
+  "name": "noname-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "author": "Galina Grigoryeva",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:GalGrigoryeva/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GalGrigoryeva/website/issues"
+  },
+  "homepage": "https://github.com/GalGrigoryeva/website",
+  "devDependencies": {
+    "autoprefixer": "^6.6.1",
+    "browser-sync": "^2.18.6",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify": "0.0.15",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  }
+}

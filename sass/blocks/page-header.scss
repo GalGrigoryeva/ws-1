@@ -1,0 +1,47 @@
+.page-header {
+  padding: 156px 0 206px;
+  background-color: $bg-pink;
+  background-image: url("../img/bg-header@1x.jpg");
+  background-size: cover;
+
+  @media #{$retina} {
+    background-image: url("../img/bg-header@2x.jpg");
+    background-size: 1800px auto;
+  }
+}
+
+.page-header__wrapper {
+  @include container();
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__content {
+  align-self: center;
+  width: 461px;
+}
+
+.page-header__title {
+  @include big-title;
+  margin: 0;
+  margin-bottom: 20px;
+  color: $font-blue;
+  span {
+    color: $green;
+  }
+}
+
+.page-header__text {
+  margin: 0;
+  margin-bottom: 36px;
+  padding-right: 80px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.page-header__decor {
+
+}
+
+.page-header__img-book {
+  box-shadow: 15px 15px 40px 2px rgba(0,0,0,0.7);
+}

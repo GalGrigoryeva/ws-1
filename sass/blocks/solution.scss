@@ -1,0 +1,25 @@
+.solution {
+  height: 480px;
+  padding: 106px 0 100px;
+  box-sizing: border-box;
+  background-color: #574f52;
+  background-image: url("../img/pen@1x.jpg");
+  background-size: cover;
+
+  @media #{$retina} {
+    background-image: url("../img/pen@2x.jpg");
+    background-size: 1800px auto;
+  }
+}
+ .solution__wrapper {
+   @include container();
+ }
+
+.solution__title {
+  @include small-title();
+  display: block;
+  margin: 0;
+  margin-bottom: 35px;
+  color: #ffffff;
+  text-align: center;
+}

@@ -1,0 +1,57 @@
+.advantages {
+  padding: 144px 0 120px;
+  background-color: $bg-pink;
+  background-image: url("../img/bg-header@1x.jpg");
+  background-size: cover;
+
+  @media #{$retina} {
+    background-image: url("../img/bg-header@2x.jpg");
+    background-size: 1800px auto;
+  }
+}
+
+.advantages__wrapper {
+  @include container();
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  width: 461px;
+}
+
+.advantages__icon {
+  position: relative;
+  display: inline-block;
+  margin-right: 28px;
+  width: 44px;
+  height: 44px;
+  vertical-align: sub;
+
+
+  &--cargo {
+    background-image: url("../img/icon-cargo.svg"),
+                      url("../img/icon-cargo-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center, 4px 3px;
+
+  }
+
+  &--certification {
+    background-image: url("../img/icon-certification.svg"),
+                      url("../img/icon-certification-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center, 4px 6px;
+  }
+}
+
+.advantages__item-title {
+  @include big-title();
+  color: $green;
+}

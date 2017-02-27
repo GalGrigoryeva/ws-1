@@ -1,0 +1,50 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Fregat";
+  font-style: normal;
+  src: url("../fonts/fregat/fregat.woff2") format("woff2"),
+       url("../fonts/fregat/fregat.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Fregat";
+  font-style: normal;
+  src: url("../fonts/fregat/fregatbold.woff2") format("woff2"),
+       url("../fonts/fregat/fregatbold.woff") format("woff");
+}
+
+body {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Fregat", Arial, sans-serif;
+  font-style: normal;
+  color: #292929;
+  background-color: #ffffff;
+}
+
+/*
+img {
+  max-width: 100%;
+  height: auto;
+}
+*/
+
+.btn {
+  display: inline-block;
+  width: 232px;
+  height: 60px;
+  font-family: "Fregat", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(to top, #4db800, #5cc600);
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 10px 25px 0 rgba(0,0,0,0.15);
+  outline: none;
+  cursor: pointer;
+}
